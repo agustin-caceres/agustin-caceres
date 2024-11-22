@@ -16,15 +16,15 @@ En este repositorio encontrarás algunos de mis proyectos en las áreas de:
 - **MLOps**: Implementación de modelos de machine learning en producción de forma escalable y eficiente.
 - **Data Analytics**: Análisis exploratorio de datos para la extracción de insights accionables.
 - **Arquitectura de Bases de Datos**: Diseño de bases de datos de forma optimizada.
+- **Cloud Computing**: Arquitectura y tecnologías en la nube.
 
 ---
 
 ### 🛠️ **Habilidades Técnicas**
 
-- **Lenguajes**: Python, SQL, NoSQL
-- **Herramientas y Frameworks**: Streamlit, Power BI, Tableau, FastAPI, Pytorch
-- **Otras Competencias**: Modelado de datos, Machine Learning
-
+- **Lenguajes**: Python.
+- **Bases de datos**: SQL, NoSQL.
+- **Herramientas y Frameworks**: Streamlit, Dash, Power BI, Tableau, FastAPI.
 ---
 
 📫 **¡Conectemos!**  
