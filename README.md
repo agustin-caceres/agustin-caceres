@@ -19,11 +19,6 @@
 
 ---
 
-## 🐍 GitHub Activity Snake:
-![GitHub Snake Animation](https://github.com/agustin-caceres/agustin-caceres/blob/output/github-contribution-grid-snake.svg)
-
----
-
 ## 📫 Puedes conectarte conmigo:
 
 [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/agustin_cceres)
