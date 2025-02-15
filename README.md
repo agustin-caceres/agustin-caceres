@@ -5,7 +5,7 @@
 ![Profile views](https://komarev.com/ghpvc/?username=agustin-caceres&label=Profile%20views&color=0e75b6&style=flat)
 
 ## 🚀 Actualmente trabajando en:
-- [iAlex](https://ialex.com)
+- [iAlex](https://ialex.com.ar/)
 - [Bedosbe](https://provhea.com/)
 
 ---
