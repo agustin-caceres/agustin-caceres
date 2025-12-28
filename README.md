@@ -6,7 +6,7 @@
 
 ### Sobre mí
 
-> Nunca cambio de interés
+> Nunca cambio de interés.
 > Cambio el nivel de profundidad
 
 ---
