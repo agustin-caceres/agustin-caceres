@@ -6,8 +6,8 @@
 
 ### Sobre mí
 
-> En el **2021**, comencé a estudiar **Abogacía**, pero en el camino me adentré en el **mundo de los datos**...  
-> y no salí de ahí. Hoy combino ambas disciplinas para construir tecnología que entiende el Derecho.
+> Nunca cambio de interés
+> Cambio el nivel de profundidad
 
 ---
 
