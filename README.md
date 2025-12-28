@@ -31,5 +31,5 @@
 ---
 
 <p align="center">
-  <i>"La inquietud y la curiosidad por el conocimiento pueden ser tu mayor virtud."</i>
+  <i>"La curiosidad es una virtud."</i>
 </p>
