@@ -4,13 +4,6 @@
 
 ---
 
-### Sobre mí
-
-> Nunca cambio de interés.
-> Cambio el nivel de profundidad
-
----
-
 ### Actualmente trabajando en
 
 - **[iAlex](https://ialex.com.ar/)** | Data Engineer  
@@ -31,5 +24,5 @@
 ---
 
 <p align="center">
-  <i>"La curiosidad es una virtud."</i>
+  <i>"Nunca cambio de interés. Cambio el nivel de profundidad"</i>
 </p>
