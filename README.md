@@ -1,6 +1,6 @@
 <h1 align="center">Hola, soy Agustín Cáceres</h1>
 
-<h3 align="center">Data Scientist | Law Student</h3>
+<h3 align="center">Data Engineer | Law Student</h3>
 
 ---
 
