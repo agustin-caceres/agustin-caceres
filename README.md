@@ -1,13 +1,13 @@
 <h1 align="center">Hola, soy Agustín Cáceres</h1>
 
-<h3 align="center">Data Engineer | Law Student</h3>
+<h3 align="center"> Data Governance, Backend & AI Architect | Law Student</h3>
 
 ---
 
 ### Actualmente trabajando en
 
-- **[iAlex](https://ialex.com.ar/)** | Data Engineer  
-- **[Bedosbe](https://provhea.com/)** | Co-Founder & CIO  
+- **[iAlex](https://ialex.com.ar/)** |
+- **[Bedosbe](https://bedobse-frontend-880473877998.europe-west1.run.app/)** |
 
 ---
 
