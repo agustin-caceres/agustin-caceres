@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Agustín Cáceres</h1>
+<h1 align="center">Agustín Cáceres</h1>
 
 <h3 align="center"> Data Governance, Backend & AI Architect | Law Student</h3>
 
