@@ -1,17 +1,16 @@
-<h1 align="center">Hola, soy Agustín Cáceres</h1>
+<h1 align="center">Hi, I'm Agustín Cáceres</h1>
 
 <h3 align="center"> Data Governance, Backend & AI Architect | Law Student</h3>
 
 ---
 
-### Actualmente trabajando en
+### Co-founder
 
-- **[iAlex](https://ialex.com.ar/)** |
-- **[Bedosbe](https://bedobse-frontend-880473877998.europe-west1.run.app/)** |
+- **[Bedosbe](https://bedosbe.com.ar/)** |
 
 ---
 
-### Contacto
+### Contact Me
 
 <div align="center">
 
@@ -22,7 +21,3 @@
 </div>
 
 ---
-
-<p align="center">
-  <i>"Nunca cambio de interés. Cambio el nivel de profundidad"</i>
-</p>
