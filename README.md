@@ -6,7 +6,7 @@
 
 ### Co-founder
 
-- **[Bedosbe](https://bedosbe.com.ar/)** |
+- **[Bedosbe](https://bedosbe.com.ar/)**
 
 ---
 
