@@ -4,9 +4,13 @@
 
 ---
 
-### Co-founder
+### Builder
 
-- **[Bedosbe](https://bedosbe.com.ar/)**
+- Building the future of B2B commerce **[Bedosbe](https://bedosbe.com.ar/)**
+- Building Legal AI **[iAlex](https://ialex.com.ar/)**
+
+Technology, business & law.
+
 
 ---
 
