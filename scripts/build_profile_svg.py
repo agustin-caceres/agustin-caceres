@@ -4,22 +4,17 @@
 from __future__ import annotations
 
 import argparse
-import json
-import os
 from pathlib import Path
-from urllib.error import URLError
-from urllib.request import Request, urlopen
 from xml.sax.saxutils import escape
 
 from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_IMAGE = ROOT / "assets" / "Gus-optimized.png"
+DEFAULT_IMAGE = ROOT / "assets" / "cerati-2-optimized.png"
 DEFAULT_ASCII = ROOT / "assets" / "profile-ascii.txt"
 DEFAULT_DARK = ROOT / "dark_mode.svg"
 DEFAULT_LIGHT = ROOT / "light_mode.svg"
-DEFAULT_USER = "agustin-caceres"
 
 DEFAULT_STATS = {
     "repo_data": "9",
@@ -61,45 +56,6 @@ PALETTES = {
         "danger": "#cf222e",
     },
 }
-
-
-def github_json(url: str, token: str | None) -> object:
-    headers = {
-        "Accept": "application/vnd.github+json",
-        "User-Agent": "agustin-caceres-profile-readme",
-    }
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
-    request = Request(url, headers=headers)
-    with urlopen(request, timeout=20) as response:
-        return json.loads(response.read().decode("utf-8"))
-
-
-def fetch_public_stats(username: str) -> dict[str, str]:
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("ACCESS_TOKEN")
-    user = github_json(f"https://api.github.com/users/{username}", token)
-    if not isinstance(user, dict):
-        raise ValueError("Unexpected GitHub user response")
-
-    stars = 0
-    page = 1
-    while True:
-        repos = github_json(
-            f"https://api.github.com/users/{username}/repos?per_page=100&type=owner&page={page}",
-            token,
-        )
-        if not isinstance(repos, list) or not repos:
-            break
-        stars += sum(int(repo.get("stargazers_count", 0)) for repo in repos if isinstance(repo, dict))
-        page += 1
-
-    return {
-        "repo_data": f"{int(user.get('public_repos', 0)):,}",
-        "star_data": f"{stars:,}",
-        "follower_data": f"{int(user.get('followers', 0)):,}",
-        "following_data": f"{int(user.get('following', 0)):,}",
-        "since_data": str(user.get("created_at", "2023")[:4]),
-    }
 
 
 def color_role(pixel: tuple[int, int, int], column: int, row: int, columns: int, rows: int) -> str:
@@ -258,17 +214,9 @@ def main() -> None:
     parser.add_argument("ascii", nargs="?", type=Path, default=DEFAULT_ASCII)
     parser.add_argument("--dark-output", type=Path, default=DEFAULT_DARK)
     parser.add_argument("--light-output", type=Path, default=DEFAULT_LIGHT)
-    parser.add_argument("--github-user", default=os.environ.get("USER_NAME", DEFAULT_USER))
-    parser.add_argument("--fetch-stats", action="store_true")
     args = parser.parse_args()
 
     stats = DEFAULT_STATS.copy()
-    if args.fetch_stats:
-        try:
-            stats.update(fetch_public_stats(args.github_user))
-        except (OSError, URLError, TimeoutError, ValueError) as exc:
-            print(f"Could not fetch GitHub stats, using defaults: {exc}")
-
     image = Image.open(args.image).convert("RGB")
     lines = args.ascii.read_text(encoding="utf-8").splitlines()
     if not lines:
