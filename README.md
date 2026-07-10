@@ -11,7 +11,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/profile-ascii-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/profile-ascii-light.svg">
-  <img alt="ASCII portrait of Gustavo Cerati playing guitar" src="assets/profile-ascii-dark.svg" width="352">
+  <img alt="ASCII portrait of Gustavo Cerati" src="assets/profile-ascii-dark.svg" width="352">
 </picture>
 
 </td>

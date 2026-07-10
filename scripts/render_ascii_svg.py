@@ -11,7 +11,7 @@ from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_IMAGE = ROOT / "assets" / "Dynamizado-optimized.png"
+DEFAULT_IMAGE = ROOT / "assets" / "Gus-optimized.png"
 DEFAULT_ASCII = ROOT / "assets" / "profile-ascii.txt"
 DEFAULT_DARK = ROOT / "assets" / "profile-ascii-dark.svg"
 DEFAULT_LIGHT = ROOT / "assets" / "profile-ascii-light.svg"
@@ -32,8 +32,18 @@ PALETTES = {
 }
 
 
-def color_role(pixel: tuple[int, int, int]) -> str:
+def color_role(pixel: tuple[int, int, int], column: int, row: int, columns: int, rows: int) -> str:
     red, green, blue = pixel
+    value = (red + green + blue) / 3
+    saturation = max(pixel) - min(pixel)
+    if saturation < 18:
+        if value < 72:
+            return "cyan"
+        if value < 142:
+            return "magenta" if column > columns * 0.56 else "neutral"
+        if value < 205:
+            return "neutral" if row > rows * 0.35 else "amber"
+        return "amber"
     if blue > red * 1.12:
         return "cyan"
     if red > blue * 1.22 and blue > green * 1.08:
@@ -59,7 +69,7 @@ def render_svg(image: Image.Image, lines: list[str], output: Path, theme: str) -
         for column, character in enumerate(line):
             if character == " ":
                 continue
-            fill = palette[color_role(sampled.getpixel((column, row)))]
+            fill = palette[color_role(sampled.getpixel((column, row)), column, row, columns, rows)]
             elements.append(
                 f'<text x="{column * glyph_width}" y="{row * line_height + baseline}" '
                 f'fill="{fill}">{escape(character)}</text>'
@@ -70,7 +80,7 @@ def render_svg(image: Image.Image, lines: list[str], output: Path, theme: str) -
             '<?xml version="1.0" encoding="UTF-8"?>',
             f'<svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="{svg_height}" '
             f'viewBox="0 0 {svg_width} {svg_height}" role="img" aria-labelledby="title">',
-            "  <title id=\"title\">ASCII portrait of Gustavo Cerati playing guitar</title>",
+            "  <title id=\"title\">ASCII portrait of Gustavo Cerati</title>",
             "  <g font-family=\"Consolas, 'Liberation Mono', monospace\" font-size=\"13\" "
             "font-weight=\"700\" xml:space=\"preserve\">",
             *(f"    {element}" for element in elements),

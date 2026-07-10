@@ -1,6 +1,6 @@
 param(
-    [string]$Source = "assets/Dynamizado.jpg",
-    [string]$Optimized = "assets/Dynamizado-optimized.png",
+    [string]$Source = "assets/Gus.jpg",
+    [string]$Optimized = "assets/Gus-optimized.png",
     [string]$Output = "assets/profile-ascii.txt",
     [int]$Width = 44
 )

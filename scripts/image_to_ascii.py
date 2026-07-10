@@ -10,7 +10,7 @@ from PIL import Image, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_SOURCE = ROOT / "assets" / "Dynamizado-optimized.png"
+DEFAULT_SOURCE = ROOT / "assets" / "Gus-optimized.png"
 DEFAULT_OUTPUT = ROOT / "assets" / "profile-ascii.txt"
 RAMP = "@#S%?*+;:,. "
 

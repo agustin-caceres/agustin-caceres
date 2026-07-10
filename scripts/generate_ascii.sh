@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SOURCE="${1:-assets/Dynamizado.jpg}"
-OPTIMIZED="${2:-assets/Dynamizado-optimized.png}"
+SOURCE="${1:-assets/Gus.jpg}"
+OPTIMIZED="${2:-assets/Gus-optimized.png}"
 OUTPUT="${3:-assets/profile-ascii.txt}"
 WIDTH="${ASCII_WIDTH:-44}"
 
