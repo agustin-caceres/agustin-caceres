@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1080px" height="530px" viewBox="0 0 1080 530" role="img" aria-labelledby="title desc">
   <title id="title">Agustin Caceres GitHub profile README</title>
-  <desc id="desc">Terminal style profile card with ASCII portrait and profile data.</desc>
+  <desc id="desc">ASCII portrait and a concise description of current projects.</desc>
   <style>
     text { font-family: Consolas, 'Liberation Mono', monospace; font-size: 16px; font-weight: 700; white-space: pre; }
-    .ascii { font-size: 7px; font-weight: 700; }
+    .ascii { font-size: 7px; }
+    .name { font-size: 24px; }
   </style>
   <rect width="1080" height="530" rx="15" fill="#ffffff"/>
   <rect x="10" y="10" width="1060" height="510" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
-  <text x="24" y="24" fill="#57606a">agustin@github:~/cerati-1.txt</text>
   <g>
     <text class="ascii" x="116.4" y="44.0" fill="#24292f">-</text>
     <text class="ascii" x="120.80000000000001" y="44.0" fill="#24292f">=</text>
@@ -3837,23 +3837,9 @@
     <text class="ascii" x="332.0" y="434.6" fill="#24292f">,</text>
   </g>
   <g>
-    <text x="470" y="46" fill="#24292f"><tspan fill="#24292f">agustin</tspan>@github<tspan fill="#57606a"> --------------------------------------</tspan></text>
-    <text x="470" y="76" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">Name</tspan><tspan>:</tspan><tspan fill="#57606a"> ............... </tspan><tspan fill="#24292f">Agustin Caceres</tspan></text>
-    <text x="470" y="100" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">Focus</tspan><tspan>:</tspan><tspan fill="#57606a"> .. </tspan><tspan fill="#24292f">Data Governance, Backend &amp; AI</tspan></text>
-    <text x="470" y="124" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">Builder</tspan><tspan>:</tspan><tspan fill="#57606a"> .................... </tspan><tspan fill="#24292f">Bedosbe</tspan></text>
-    <text x="470" y="148" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">Builder</tspan><tspan>:</tspan><tspan fill="#57606a"> ...................... </tspan><tspan fill="#24292f">iAlex</tspan></text>
-    <text x="470" y="172" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">Intersection</tspan><tspan>:</tspan><tspan fill="#57606a"> .. </tspan><tspan fill="#24292f">Technology, business &amp; law</tspan></text>
-    <text x="470" y="224" fill="#24292f"><tspan>Projects</tspan><tspan fill="#57606a"> ----------------------------------</tspan></text>
-    <text x="470" y="254" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">Bedosbe</tspan><tspan>:</tspan><tspan fill="#57606a"> ............... </tspan><tspan fill="#24292f">B2B commerce</tspan></text>
-    <text x="470" y="278" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">iAlex</tspan><tspan>:</tspan><tspan fill="#57606a"> ..................... </tspan><tspan fill="#24292f">Legal AI</tspan></text>
-    <text x="470" y="302" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">Mode</tspan><tspan>:</tspan><tspan fill="#57606a"> ........... </tspan><tspan fill="#24292f">Ship, learn, repeat</tspan></text>
-    <text x="470" y="354" fill="#24292f"><tspan>GitHub</tspan><tspan fill="#57606a"> ----------------------------------</tspan></text>
-    <text x="470" y="384" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">Repos</tspan><tspan>:</tspan><tspan id="repo_data_dots" fill="#57606a"> ............ </tspan><tspan id="repo_data" fill="#24292f">9</tspan></text>
-    <text x="680" y="384" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">Stars</tspan><tspan>:</tspan><tspan id="star_data_dots" fill="#57606a"> ............ </tspan><tspan id="star_data" fill="#24292f">0</tspan></text>
-    <text x="470" y="408" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">Followers</tspan><tspan>:</tspan><tspan id="follower_data_dots" fill="#57606a"> ....... </tspan><tspan id="follower_data" fill="#24292f">11</tspan></text>
-    <text x="680" y="408" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">Following</tspan><tspan>:</tspan><tspan id="following_data_dots" fill="#57606a"> ....... </tspan><tspan id="following_data" fill="#24292f">11</tspan></text>
-    <text x="470" y="432" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">Since</tspan><tspan>:</tspan><tspan id="since_data_dots" fill="#57606a"> ......... </tspan><tspan id="since_data" fill="#24292f">2023</tspan></text>
-    <text x="470" y="476" fill="#24292f"><tspan>Contact</tspan><tspan fill="#57606a"> ----------------------------------</tspan></text>
-    <text x="470" y="506" fill="#24292f"><tspan fill="#57606a">. </tspan><tspan fill="#24292f">Social</tspan><tspan>:</tspan><tspan fill="#57606a"> .... </tspan><tspan fill="#24292f">LinkedIn / X / Instagram</tspan></text>
+    <text class="name" x="470" y="190" fill="#24292f">Agustin Caceres</text>
+    <text x="470" y="244" fill="#24292f">Building the future of B2B commerce https://bedosbe.com.ar/</text>
+    <text x="470" y="284" fill="#24292f">Building Legal AI https://ialex.com.ar/</text>
+    <text x="470" y="324" fill="#57606a">Technology, business &amp; law.</text>
   </g>
 </svg>
